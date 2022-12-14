@@ -11,7 +11,7 @@ namespace TomersWesite
 {
 
 
-    public partial class WebForm1
+    public partial class SignUp
     {
 
         /// <summary>
