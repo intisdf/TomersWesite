@@ -1,103 +1,118 @@
-﻿<%@ Page Language="C#" AutoEventWireup="true" CodeBehind="SignUp.aspx.cs" Inherits="TomersWesite.SignUp" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="SignUp.aspx.cs" Inherits="TomersWesite.SignUp" %>
 
-<!DOCTYPE html>
-
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head runat="server">
-    <title></title>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>
         table{
-            border:1px solid black;
-            margin: auto;
-            border-collapse: collapse;
+            border: 1px solid red;
+            margin : auto ;
+            border-collapse:collapse;
         }
         td,th{
-            border:1px solid black;
+            border: 1px solid navy;
         }
+
     </style>
-</head>
-<body>
-    <form id="form1" runat="server" onsubmit ="returnChkForm">
-        <div>
-        </div>
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+    <form method="post" runat ="server">
+        <table>
+            <tr>
+                <th></th>
+                <th>טופס רישום</th>
+                <th></th>
+            </tr>
+            <tr>
+                <td>שם משתמש</td>
+                <td>
+                    <input type ="text" id ="uName" name ="uName" />
+                </td>
+                <td>
+                    <input type ="text" id ="muName" size ="50"
+                        style ="display:none; background-color: silver; font-weight:bold;"
+                        disabled ="disabled"; />
+                </td>
+            </tr>
+            <tr>
+                <td>שם פרטי</td>
+                <td>
+                    <input type ="text" id ="fName" name ="fName" />
+                </td>
+                <td>
+                    <input type ="text" id ="mfName" size ="50"
+                        style ="display:none; background-color: silver; font-weight:bold;"
+                        disabled ="disabled"; />
+                </td>
+            </tr>
+            <tr>
+                <td>שם משפחה</td>
+                <td>
+                    <input type ="text" name= "lName" id ="lName" />
+                </td>
+                <td>
+                    <input type ="text" id ="mlName" size ="50"
+                        style ="display:none; background-color: silver; font-weight:bold;"
+                        disabled ="disabled"; />
+                </td>
+            </tr>
+            <tr>
+                <td>כתובת דוא"ל</td>
+                <td>
+                    <input type ="text" name= "email" id ="email" />
+                </td>
+                <td>
+                    <input type ="text" id ="mEmail" size ="50"
+                        style ="display:none; background-color: silver; font-weight:bold;"
+                        disabled ="disabled"; />
+                </td>
+            </tr>
+            <tr>
+                <td>מין</td>
+                <td>INPUT</td>
+                <td>OUTPUT</td>
+            </tr>
+            <tr>
+                <td>שנת לידה</td>
+                <td>INPUT</td>
+                <td>OUTPUT</td>
+            </tr>
+            <tr>
+                <td>ישוב מגורים</td>
+                <td>INPUT</td>
+                <td>OUTPUT</td>
+            </tr>
+            <tr>
+                    <tr>
+                <td>טלפון</td>
+                <td>INPUT</td>
+                <td>OUTPUT</td>
+            </tr>
+            <tr>
+                    <tr>
+                <td>תחביבים</td>
+                <td colspan ="2">checkboxes span = 2</td>
+            </tr>
+            <tr>
+                    <tr>
+                <td>סיסמה</td>
+                <td>INPUT + red label</td>
+                <td>OUTPUT</td>
+            </tr>
+            <tr>
+                    <tr>
+                <td>בדיקת סיסמה</td>
+                <td>INPUT</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td> </td>
+            </tr>
+            <tr>
+                <td><br /><td>
+                    <td colspan ="2" style ="text-align:center;">
+                        <input type ="submit" name="submit" value ="שלח" />
+                        <input type ="reset" />
+                </td>
+            </tr>
+        </table>
     </form>
-    <table>
-        <tr>
-            <td></td>
-            <td>טופס רישום</td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>שם משתמש</td>
-            <td><input type ="text" id ="uName" name ="uName" /></td>
-            <td>
-                <input type ="text" id ="muName" size ="50"
-                    style ="display:none; background-color:silver; font-weight: bold;"
-                    disabled="disabled"/>
-                    
-            </td>
-        </tr>
-        <tr>
-            <td>שם פרטי</td>
-            <td><input type ="text" id ="fName" name ="fName" /></td>
-            <td><input type ="text" id ="mfName" size ="50"
-                    style ="display:none; background-color:silver; font-weight: bold;"
-                    disabled="disabled"/></td>
-        </tr>
-        <tr>
-            <td>שם משפחה</td>
-            <td><input type ="text" id ="lName" name ="lName" /></td>
-            <td><input type ="text" id ="mlName" size ="50"
-                    style ="display:none; background-color:silver; font-weight: bold;"
-                    disabled="disabled"/></td>
-        </tr>
-        <tr>
-            <td>דוא"ל</td>
-            <td><input type ="text" id ="email" name ="email" /></td>
-            <td><input type ="text" id ="mEmail" size ="50"
-                    style ="display:none; background-color:silver; font-weight: bold;"
-                    disabled="disabled"/></td>
-        </tr>
-        <tr>
-            <td>מין</td>
-            <td>RADIO</td>
-            <td></td>
-        </tr>
-        <tr>
-                
-            <td>שנת לידה</td>
-            <td>COMBO</td>
-            <td></td>
-        </tr>
-        <tr>
-                
-            <td>ישוב מגורים</td>
-            <td>COMBO</td>
-            <td></td>
-        </tr>
-        <tr>
-                
-            <td>טלפון</td>
-            <td>COMBO+Textbox+RedLebel</td>
-            <td></td>
-        </tr>
-        <tr>
-                
-            <td>תחביבים</td>
-            <td colspan ="2">CheckBoxes span = 2</td>
-        </tr>
-        <tr>
-                
-            <td>סיסמה</td>
-            <td>INPUT + red label</td>
-            <td>OUTPUT</td>
-        </tr>
-        <tr>
-                
-            <td>בדיקת סיסמה</td>
-            <td>INPUT</td>
-            <td></td>
-        </tr>
-    </table>
-</body>
-</html>
+</asp:Content>

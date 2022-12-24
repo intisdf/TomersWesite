@@ -19,16 +19,19 @@ namespace TomersWesite
                 string lName = Request.Form["lName"];
                 string email = Request.Form["email"];
 
-                st = "<table border = '1' dir = 'ltr'>";
+                st = "<table border='1' dir= 'ltr'>";
 
-                st += "<tr><th colspan = '2'> הפריטים שהתקבלו מהשרת </th></tr>";
-                st += "<tr><td> user name :   </td></td>" + uName + "</td></tr>";
-                st += $"<tr><td> first name :   </td></td> {fName} </td></tr>";
-                st += $"<tr><td> last name :   </td></td> {lName} </td></tr>";
-                st += $"<tr><td> email :   </td></td> {email} </td></tr>";
+                st += "<tr><th colspan='2'> הפרטים שהתקבלו מהשרת<./th></tr>";
+                st += "<tr><td> user name:></td><td>" + uName + "</th></tr>";
+                st += "<tr><td> user name:></td><td>" + fName + "</th></tr>";
+                st += "<tr><td> user name:></td><td>" + lName + "</th></tr>";
+                st += "<tr><td> user name:></td><td>" + email + "</th></tr>";
 
                 st += "</table>";
+
             }
+
+
         }
     }
 }
