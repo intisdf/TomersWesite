@@ -10,11 +10,12 @@
         td,th{
             border: 1px solid navy;
         }
-
+        
     </style>
+    <script src ="Scripts.CheckMyForm.js"></script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
-    <form method="post" runat ="server">
+    <form method="post" runat ="server" onsubmit="return chkForm();">
         <table>
             <tr>
                 <th></th>

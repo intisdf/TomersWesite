@@ -23,9 +23,29 @@ function userNameOK(name) {
     }
     else
         document.getElementById("mUName").style.display = "none";
+    if (isBadChars(name))
+        msg = "שם משתמש יכול להכיל אותיות ו/או ספרות בלבד"
     return true;
 }
+//-- מכיל תווים אסורים--
+function isBadChars(str)
+{
+    var badChr = "$%^&*()! []{}<>?"
+    var len = badChr.length;
 
+    var i = 0, pos, ch;
+    while (i < len)
+    {
+        ch = badChr.charAt(i);
+        pos = str.indexOf(ch);
+        if (pos != -1)
+        {
+            return true
+        }
+        i++
+    }
+    return false;
+}
 
 //--- מכיל תווים בעברית ---
 function isHebrew(str) {
