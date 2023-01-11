@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -14,6 +15,7 @@ namespace TomersWesite
         {
             if (Request.Form["submit"] != null)
             {
+                string gender = Request.Form["gender"];
                 string uName = Request.Form["uName"];
                 string fName = Request.Form["fName"];
                 string lName = Request.Form["lName"];
@@ -26,6 +28,12 @@ namespace TomersWesite
                 st += "<tr><td> user name:></td><td>" + fName + "</th></tr>";
                 st += "<tr><td> user name:></td><td>" + lName + "</th></tr>";
                 st += "<tr><td> user name:></td><td>" + email + "</th></tr>";
+
+                if (gender == "male")
+                    st += $"<tr> <td colspan = '2'>{uName} הוא בן </td></tr>";
+                else
+                    st += $"<tr> <td colspan = '2'>{uName} היא בת </td></tr>";
+                st += "</table>";
 
                 st += "</table>";
 
