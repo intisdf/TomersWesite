@@ -68,7 +68,10 @@
             </tr>
             <tr>
                 <td>מין</td>
-                <td>INPUT</td>
+                <td>
+                    <input type ="radio" name="gender" value ="male" /> זכר
+                    <input type ="radio" name="gender" value ="male" checked/> נקבה
+                </td>
                 <td>OUTPUT</td>
             </tr>
             <tr>
