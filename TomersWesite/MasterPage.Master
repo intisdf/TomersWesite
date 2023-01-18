@@ -7,6 +7,35 @@
     <title></title>
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+    <style>
+        body {
+         direction:rtl;
+         margin:30px;
+         margin-left:30px;
+     }
+        
+        h1 {
+            text-align:center;
+            color:hotpink;
+           }
+        h2 {
+            text-align:right;
+           font-size:larger;
+        }
+        h3 {
+            text-align:right;
+            font-size:larger;
+        }
+        h4 {
+            text-align:right;
+            font-size:larger;
+        }
+       div{
+            text-align:right;
+            font-size:large;
+           }
+
+    </style>
 </head>
 <body>
         <div>
