@@ -102,7 +102,7 @@
             </td>
             <td>
                 <input type="text" id="mHobies" size="30"
-                    style="display: none; background-color: silver; font-weight; bold;"
+                    style="display: none; background-color: silver; font-weight: bold;"
                     disabled="disabled" />
             </td>
         </tr>

@@ -34,11 +34,53 @@
             text-align:right;
             font-size:large;
            }
+       nav {
+            text-align: center;
+            font-size: 40px;
+            font: bold;
+        }
+
+        span {
+            margin-left: 40px;
+            font-style: inherit;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+
+        .row {
+            display: flex;
+        }
+
+        .column {
+            flex: 33.33%;
+            padding: 5px;
+        }
+        header {
+            color: indigo;
+            text-align: center;
+            font-size: 45px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
 
     </style>
 </head>
 <body>
+        <header><strong>Jojo Surfing</strong></header>
         <div>
+            <hr style="height:2px;border-width:0;color:gray;background-color:gray">
+    <nav>
+        <a href="Info.html"><span>אינפורמציה</span></a>
+        <a href="SignUp.aspx"><span>כניסה למשתמש</span></a>
+        <a href="Main.html"><span>בית</span></a>
+        <a href="https://beachcam.co.il/dromi2.html"><span>מצלמות חוף</span></a>
+        <a href="https://gosurf.co.il/"><span>תחזית גלים</span></a>
+        <a href="Maarechet Shaot.html"><span>מערכת שעות</span></a>
+    </nav>
+    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
             <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
             </asp:ContentPlaceHolder>
         </div>

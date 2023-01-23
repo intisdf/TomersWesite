@@ -32,9 +32,9 @@ namespace TomersWesite
                 st += "<tr><td> hobies:></td><td>" + hobies + "</td></tr>";
 
                 if (gender == "male")
-                    st += $"<tr> <td colspan = '2'>{uName} הוא בן </td></tr>";
+                    st += $"<tr> <td colspan = '2'>{uName} הוא בן </tr>";
                 else
-                    st += $"<tr> <td colspan = '2'>{uName} היא בת </td></tr>";
+                    st += $"<tr> <td colspan = '2'>{uName} היא בת </tr>";
                 st += "</table>";
 
                 st += "</table>";
