@@ -17,5 +17,17 @@ namespace TomersWesite
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
         }
+        void Session_Start(object sender, EventArgs e)
+        {
+            Session["admin"] = "no";
+            Session["uName"] = "אורח";
+            Session["userFName"] = "אורח";
+        }
+        void Session_End(object sender, EventArgs e)
+        {
+            Session["uName"] = "אורח";
+            Session["userFName"] = "אורח";
+        }
+
     }
 }
