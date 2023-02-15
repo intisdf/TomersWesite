@@ -33,7 +33,7 @@ namespace TomersWesite
                 else
                 {
                     Session["uName"] = table.Rows[0]["uName"];
-                    Session["uFName"] = table.Rows[0]["uFName"];
+                    Session["uFName"] = table.Rows[0]["FName"];
                     Response.Redirect("Main.html");
                 }
             }

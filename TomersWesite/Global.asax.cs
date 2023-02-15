@@ -21,12 +21,12 @@ namespace TomersWesite
         {
             Session["admin"] = "no";
             Session["uName"] = "אורח";
-            Session["userFName"] = "אורח";
+            Session["uFName"] = "אורח";
         }
         void Session_End(object sender, EventArgs e)
         {
             Session["uName"] = "אורח";
-            Session["userFName"] = "אורח";
+            Session["uFName"] = "אורח";
         }
 
     }

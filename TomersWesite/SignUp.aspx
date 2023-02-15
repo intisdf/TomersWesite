@@ -94,11 +94,11 @@
         <tr>
             <td>תחביבים:</td>
             <td>
-               <input type="checkbox" name="hobies" value="football" />כדורגל&nbsp;&nbsp;&nbsp;
-               <input type="checkbox" name="hobies" value="Tennis" />טניס&nbsp;&nbsp;&nbsp;
-               <input type="checkbox" name="hobies" value="compGame" />מחשב משחקי&nbsp;&nbsp;&nbsp;
-               <input type="checkbox" name="hobies" value="dancing" />ריקוד&nbsp;&nbsp;&nbsp;
-               <input type="checkbox" name="hobies" value="other" />אחר&nbsp;&nbsp;&nbsp;
+               <input type="checkbox" name="hobies" value="1" />כדורגל&nbsp;&nbsp;&nbsp;
+               <input type="checkbox" name="hobies" value="2" />טניס&nbsp;&nbsp;&nbsp;
+               <input type="checkbox" name="hobies" value="3" />מחשב משחקי&nbsp;&nbsp;&nbsp;
+               <input type="checkbox" name="hobies" value="4" />ריקוד&nbsp;&nbsp;&nbsp;
+               <input type="checkbox" name="hobies" value="5" />אחר&nbsp;&nbsp;&nbsp;
             </td>
             <td>
                 <input type="text" id="mHobies" size="30"
