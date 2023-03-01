@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="SignUp.aspx.cs" Inherits="TomersWesite.SignUp" %>
+﻿    <%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="SignUp.aspx.cs" Inherits="TomersWesite.SignUp" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <style>
@@ -16,7 +16,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <form method="post" runat ="server" onsubmit="return chkForm();">
-<table >
+<table>
         <tr>
             <th></th>
             <th>טופס רישום</th>
@@ -88,9 +88,34 @@
         </tr>
         <tr>
             <td>טלפון:</td>
-            <td>COMBO+Textbox+Redlabel</td>
-            <td></td>       
-        </tr>
+            <td dir ="ltr">
+                <select name ="prefix">
+                    <option value ="050">050</option>
+                    <option value ="052">052</option>
+                    <option value ="053">053</option>
+                    <option value ="054">054</option>
+                    <option value ="055">055</option>
+                    <option value ="057">057</option>
+                    <option value ="058">058</option>
+                    <option value ="02">02</option>
+                    <option value ="03">03</option>
+                    <option value ="04">04</option>
+                    <option value ="08">08</option>
+                    <option value ="09">09</option>
+                    <option value ="050">050</option>
+                </select>
+
+                &nbsp;&nbsp;-&nbsp;&nbsp;
+
+                <input type ="text" name ="phoneNum" id="phoneNum" />
+         </td>
+            <td>
+                <input type="text" id="mPhone" size = "30"
+                    style="display:none; background-color: silver;font-weight:bold"
+                    disabled ="disabled" />
+            </td>
+     
+        </tr>>
         <tr>
             <td>תחביבים:</td>
             <td>
@@ -108,7 +133,10 @@
         </tr>
         <tr>
             <td>סיסמא:</td>
-            <td>INPUT+red label</td>
+            <td>
+                <input type ="password" name="pw" id="pw" size ="10" />
+                   <span style ="color:red;"><* * 6-10 תווים</span>
+            </td>
             <td>OUTPUT</td>
         </tr>
         <tr>
