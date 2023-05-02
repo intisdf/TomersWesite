@@ -129,7 +129,7 @@
     <Content Include="Logout.aspx" />
     <Content Include="Maarechet Shaot.html" />
     <Content Include="Info.html" />
-    <Content Include="Main.html" />
+    <Content Include="Main.aspx" />
     <Content Include="MasterPage.Master" />
     <Content Include="Scripts\CheckMyForm.js" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -234,6 +234,13 @@
     </Compile>
     <Compile Include="Logout.aspx.designer.cs">
       <DependentUpon>Logout.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Main.aspx.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Main.aspx.designer.cs">
+      <DependentUpon>Main.aspx</DependentUpon>
     </Compile>
     <Compile Include="MasterPage.Master.cs">
       <DependentUpon>MasterPage.Master</DependentUpon>

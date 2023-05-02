@@ -9,24 +9,27 @@
     </asp:ContentPlaceHolder>
     <style>
         body {
-         direction:rtl;
-         margin:30px;
-         margin-left:30px;
-     }
-        
-        h1 {
-            text-align:center;
-            color:black;
-           }
-        h4 {
-            text-align:right;
-            font-size:larger;
+            direction: rtl;
+            margin: 30px;
+            margin-left: 30px;
         }
-       div{
-            text-align:right;
-            font-size:large;
-           }
-       nav {
+
+        h1 {
+            text-align: center;
+            color: black;
+        }
+
+        h4 {
+            text-align: right;
+            font-size: larger;
+        }
+
+        div {
+            text-align: right;
+            font-size: large;
+        }
+
+        nav {
             text-align: center;
             font-size: 40px;
             font: bold;
@@ -51,6 +54,7 @@
             flex: 33.33%;
             padding: 5px;
         }
+
         header {
             color: indigo;
             text-align: center;
@@ -77,25 +81,40 @@
             flex: 33.33%;
             padding: 5px;
         }
-
     </style>
 </head>
 <body>
     <header><strong>Jojo Surfing</strong></header>
-        <div>
-            <hr style="height:2px;border-width:0;color:gray;background-color:gray">
-    <nav>
-        <a href="Info.html"><span>אינפורמציה</span></a>
-        <a href="SignUp.aspx"><span>כניסה למשתמש</span></a>
-        <a href="Main.html"><span>בית</span></a>
-        <a href="https://beachcam.co.il/dromi2.html"><span>מצלמות חוף</span></a>
-        <a href="https://gosurf.co.il/"><span>תחזית גלים</span></a>
-        <a href="Maarechet Shaot.html"><span>מערכת שעות</span></a>
-    </nav>
-    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder>
-        </div>
-    
+    <table class=" mpTable">
+        <tr class="mpTd" style="vertical-align: top">
+            <td class="mpTd" rowspan="2" style="width: 20%;">
+               
+            </td>
+            <td class="mpTd" style="width: 70%;">
+                <div id="top" class="img-responsive" style="height: 140px;">
+                    <img src="https://st2.depositphotos.com/1000618/7139/v/450/depositphotos_71398779-stock-illustration-surfing-vintage-label.jpg" />
+                </div>
+            </td>
+            <td class="mpTd" style="width: 10%"></td>
+        </tr>
+        <tr>
+            <div>
+                <hr style="height: 2px; border-width: 0; color: gray; background-color: gray">
+                <nav>
+                    <%= (Session["admin"].ToString() != "yes" && Session["uName"].ToString() != "אורח") ? "<a href='LoginAdmin.aspx' class='btn btn-outline-primary'>התנתקות</a><a href='LoginAdmin.aspx' class='btn btn-outline-secondary'>התחברות מנהל</a>":"" %>
+                     <% = loginMsg%> 
+                    <a href="Info.html"><span>אינפורמציה</span></a>
+                    <a href="SignUp.aspx"><span>כניסה למשתמש</span></a>
+                    <a href="Main.html"><span>בית</span></a>
+                    <a href="https://beachcam.co.il/dromi2.html"><span>מצלמות חוף</span></a>
+                    <a href="https://gosurf.co.il/"><span>תחזית גלים</span></a>
+                    <a href="Maarechet Shaot.html"><span>מערכת שעות</span></a>
+                </nav>
+                <hr style="height: 2px; border-width: 0; color: gray; background-color: gray">
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+        </tr>
+    </table>
 </body>
 </html>

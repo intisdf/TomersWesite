@@ -19,7 +19,7 @@
 <table>
         <tr>
             <th></th>
-            <th>טופס רישום</th>
+            <th>טופס רישום</th>x
             <th></th>
         </tr>
         <tr>

@@ -1,4 +1,8 @@
-﻿<!DOCTYPE html>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="Main.aspx.cs" Inherits="TomersWesite.Main" %>
+<asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
+<!DOCTYPE html>
 <html>
 <head>
     <meta charset="utf-8" />
@@ -47,18 +51,6 @@
     </style>
 </head>
 <body>
-    <header><strong>Jojo Surfing</strong></header>
-    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
-    <nav>
-        <a href="Info.html"><span>אינפורמציה</span></a>
-        <a href="SignUp.aspx"><span>כניסה למשתמש</span></a>
-        <a href="Main.html"><span>בית</span></a>
-        <a href="https://beachcam.co.il/dromi2.html"><span>מצלמות חוף</span></a>
-        <a href="https://gosurf.co.il/"><span>תחזית גלים</span></a>
-        <a href="Maarechet Shaot.html"><span>מערכת שעות</span></a>
-    </nav>
-    <hr style="height:2px;border-width:0;color:gray;background-color:gray">
-
     <div class="row">
         <div class="column">
             <img src="https://img.redbull.com/images/c_limit,w_1500,h_1000,f_auto,q_auto/redbullcom/2020/5/1/mqgjwevxveuc6fcqvdfc/carissa-moore-waves" alt="Surf1" style="width:100%">
@@ -77,3 +69,4 @@
     </h2>
 </body>
 </html>
+</asp:Content>
