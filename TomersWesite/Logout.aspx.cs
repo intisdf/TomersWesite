@@ -12,7 +12,7 @@ namespace TomersWesite
         protected void Page_Load(object sender, EventArgs e)
         {
             Session.Abandon();
-            Response.Redirect("Main.html");
+            Response.Redirect("Main.aspx");
         }
     }
 }

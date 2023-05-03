@@ -92,7 +92,7 @@
             </td>
             <td class="mpTd" style="width: 70%;">
                 <div id="top" class="img-responsive" style="height: 140px;">
-                    <img src="https://st2.depositphotos.com/1000618/7139/v/450/depositphotos_71398779-stock-illustration-surfing-vintage-label.jpg" />
+                    
                 </div>
             </td>
             <td class="mpTd" style="width: 10%"></td>
@@ -101,7 +101,7 @@
             <div>
                 <hr style="height: 2px; border-width: 0; color: gray; background-color: gray">
                 <nav>
-                    <%= (Session["admin"].ToString() != "yes" && Session["uName"].ToString() != "אורח") ? "<a href='LoginAdmin.aspx' class='btn btn-outline-primary'>התנתקות</a><a href='LoginAdmin.aspx' class='btn btn-outline-secondary'>התחברות מנהל</a>":"" %>
+                    <%= (Session["admin"].ToString() != "yes" && Session["uName"].ToString() != "אורח") ? "<a href='Logout.aspx' class='btn btn-outline-primary'><span>התנתקות</span></a><a href='LoginAdmin.aspx' class='btn btn-outline-secondary'><span>התחברות מנהל</span></a>":"" %>
                      <% = loginMsg%> 
                     <a href="Info.html"><span>אינפורמציה</span></a>
                     <a href="SignUp.aspx"><span>כניסה למשתמש</span></a>

@@ -10,7 +10,7 @@
             <tr>
                 <td>שם מנהל:</td>
                 <td>
-                    <input type="text" name="MName" id ="mName" /></td>
+                    <input type="text" name="mName" id ="mName" /></td>
             </tr>
             <tr>
                 <td>סיסמא:</td>
