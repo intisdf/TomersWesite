@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="SelectByNBame.aspx.cs" Inherits="TomersWesite.ShowTable" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="SelectByNBame.aspx.cs" Inherits="TomersWesite.SelectByNBame" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
      <style>
         h1 { text-align: center; color: black; }
@@ -14,7 +14,6 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h1>טבלת המשתמשים</h1>
     <h2><%= sqlSelect %></h2>
-
     <table>
         <%= st %>
     </table>

@@ -5,4 +5,6 @@
     <h1>דף ניהול</h1>
 
     <div style ="text-align:center;"><%= msg %></div>
+    <a href="SelectByNBame.aspx">SelectByNBame.aspx</a>
+    <a href="ShowTable.aspx">ShowTable.aspx</a>
 </asp:Content>

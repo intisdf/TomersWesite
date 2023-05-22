@@ -3,6 +3,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" runat="server">
     <h1>כניסת משתמש</h1>
+    <%=msg %>
     <form name="loginFrm" id="loginFrm" method="post" runat="server">
         <br />
         <br>

@@ -11,7 +11,7 @@ namespace TomersWesite
 {
 
 
-    public partial class ShowTable
+    public partial class SelectByNBame
     {
     }
 }

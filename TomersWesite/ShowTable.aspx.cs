@@ -13,15 +13,15 @@ namespace TomersWesite
         public string st = "", msg = "", sqlSelect = "";
         protected void Page_Load(object sender, EventArgs e)
         {
-            //if (Session["admin"].ToString() == "no")
-            //{
-            //    msg += "<div style ='text-align: center; color; red'>";
-            //    msg += "<h3>אינך מנהל!אין לך הרשאה לצפות בדף זה</h3>";
-            //    msg += "<a href ='Main.html'>[המשך]</a>";
-            //    msg += "</div>";
-            //}
-            //else
-            //{
+            if (Session["admin"].ToString() == "no")
+            {
+                msg += "<div style ='text-align: center; color; red'>";
+                msg += "<h3>אינך מנהל!אין לך הרשאה לצפות בדף זה</h3>";
+                msg += "<a href ='Main.html'>[המשך]</a>";
+                msg += "</div>";
+            }
+            else
+            {
                 string tableName = "usersTbl";
 
                 sqlSelect = $"select * from {tableName}";
@@ -74,7 +74,7 @@ namespace TomersWesite
                     }
 
                     msg = $"נמצאו  {length} משתמשים";
-                //}
+                }
             }
         }
     }

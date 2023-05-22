@@ -10,6 +10,7 @@ namespace TomersWesite
 {
     public partial class Login : System.Web.UI.Page
     {
+        public string msg = "";
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Request.Form["Submit"] != null)
@@ -17,7 +18,6 @@ namespace TomersWesite
                 string filename = "";
                 string tableName = "usersTbl";
                 string sqlLogin;
-                string msg = "";
                 string uName = Request.Form["uName"];
                 string pw = Request.Form["pw"];
                 sqlLogin = $"select * from {tableName} where uName = '{uName}' and pw= '{pw}'";

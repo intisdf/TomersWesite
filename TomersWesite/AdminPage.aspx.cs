@@ -22,10 +22,10 @@ namespace TomersWesite
             }
             else
             {
-                msg += "<h3><a href> = 'Showtable.aspx'<הצגת טבלת משתמשים</a></h3>";
+                msg += "<h3><a href=\"ShowTable.aspx\">ShowTable.aspx</a>\r\n</h3>";
                 msg += "br /><br />";
-                msg += "<h3><a href = 'SelectByName'כל המשתמשים שהשם הפרטי שלהם מתחיל ב -א</a></h3>";
-                msg += "<h3><a href = 'SelectGmailAndYears'כל המשתמשים שגרים בחיפה,מודיעים, תל אביב</a></h3>";
+                msg += "<h3><a href=\"SelectByNBame.aspx\">שאילתה פשוטה</a></h3>";
+                msg += "<h3> <a href=\"SelectGmailAndYears.aspx\">שאליתה מורכבת</a> </h3>";
 
             }
         }

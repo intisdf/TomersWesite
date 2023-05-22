@@ -10,6 +10,7 @@ namespace TomersWesite
 {
     public partial class LoginAdmin : System.Web.UI.Page
     {
+        public string msg = "";
         protected void Page_Load(object sender, EventArgs e)
         {
             if (Request.Form["submit"] != null)
@@ -17,7 +18,6 @@ namespace TomersWesite
                 string fileName = "";
                 string tableName = "ManagerTbl";            
                 string sqlLogin;
-                string msg = "";
                 string mName = Request.Form["mName"];
                 string mPw = Request.Form["mPw"];
                 sqlLogin = $"select * from {tableName} where mName = '{mName}' and mPw = '{mPw}'";
@@ -26,7 +26,7 @@ namespace TomersWesite
                 if (length == 0)
                 {
                     msg += "<div style = 'text-align: center; color: red;'>";
-                    msg += "<h3>אינך מנהל! אין לך הרשאה לצפות בדף זה</h3>";
+                    msg += "<h3>מנהל לא קיים במערכת !</h3>";
                     msg += "<a href.'Main.aspx'>[ המשך ]</a>";
                     msg += "</div>";
                 }

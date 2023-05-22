@@ -1,4 +1,4 @@
-﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="DeleteUser.aspx.cs" Inherits="TomersWesite.ShowTable" %>
+﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.Master" AutoEventWireup="true" CodeBehind="DeleteUser.aspx.cs" Inherits="TomersWesite.DeleteUser" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
      <style>
         h1 { text-align: center; color: black; }
@@ -18,6 +18,5 @@
     <table>
         <%= st %>
     </table>
-
     <h3><%= msg %></h3>
 </asp:Content>
