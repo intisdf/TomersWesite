@@ -104,7 +104,7 @@
                 <hr style="height: 2px; border-width: 0; color: gray; background-color: gray">
                 <nav>
                     <%= (Session["admin"].ToString() != "yes" && Session["uName"].ToString() != "אורח") ? "<a href='Logout.aspx' class='btn btn-outline-primary'><span>התנתקות</span></a><a href='LoginAdmin.aspx' class='btn btn-outline-secondary'><span>התחברות מנהל</span></a>":"" %>
-                     <% = loginMsg%> 
+                    <% = loginMsg%> 
                     <a href="Info.html"><span>אינפורמציה</span></a>
                     <a href="SignUp.aspx"><span>כניסה למשתמש</span></a>
                     <a href="Main.html"><span>בית</span></a>
