@@ -160,6 +160,14 @@
     <Content Include="Pics\Mick Fanning1.png" />
     <Content Include="Pics\Mick Fanning2.png" />
     <Content Include="Pics\NewLogoo.png" />
+    <Content Include="Pics\NoBackGround1.png" />
+    <Content Include="Pics\NoBackGround2.png" />
+    <Content Include="Pics\NoBackGround3.png" />
+    <Content Include="Pics\NoBackGround4.png" />
+    <Content Include="Pics\NoBackGround5.png" />
+    <Content Include="Pics\NoBackGround6.png" />
+    <Content Include="Pics\NoBackGround7.png" />
+    <Content Include="Pics\NoBackGround8.png" />
     <Content Include="Pics\Pic11.png" />
     <Content Include="Pics\Pic14.png" />
     <Content Include="Pics\Pic15.png" />
@@ -179,6 +187,7 @@
     <Content Include="Pics\stephanie gilmore.png" />
     <Content Include="Pics\stephanie gilmore1.png" />
     <Content Include="Pics\stephanie gilmore2.png" />
+    <Content Include="Pics\goback.jpeg" />
     <Content Include="Robert Kelly Slater.aspx" />
     <Content Include="Scripts\CheckMyForm.js" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />

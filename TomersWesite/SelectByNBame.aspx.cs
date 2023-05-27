@@ -17,7 +17,7 @@ namespace TomersWesite
             {
                 msg += "<div style ='text-align: center; color; red'>";
                 msg += "<h3>אינך מנהל!אין לך הרשאה לצפות בדף זה</h3>";
-                msg += "<a href ='Main.html'>[המשך]</a>";
+                msg += "<a href ='Main.aspx'>[המשך]</a>";
                 msg += "</div>";
             }
             else
