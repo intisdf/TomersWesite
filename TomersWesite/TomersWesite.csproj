@@ -105,7 +105,7 @@
   <ItemGroup>
     <Content Include="About.aspx" />
     <Content Include="AdminPage.aspx" />
-    <Content Include="Carosela.aspx" />
+    <Content Include="Carissa Moore.aspx" />
     <Content Include="ComplexQueryaspx.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="Content\bootstrap-theme.css" />
@@ -116,7 +116,9 @@
     <Content Include="Default.aspx" />
     <Content Include="DeleteRecord.aspx" />
     <Content Include="favicon.ico" />
+    <Content Include="Filipe Toledo.aspx" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="Gabriel Medina.aspx" />
     <Content Include="Global.asax" />
     <Content Include="fonts\glyphicons-halflings-regular.woff2" />
     <Content Include="fonts\glyphicons-halflings-regular.woff" />
@@ -126,15 +128,58 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Info.aspx" />
+    <Content Include="Julian Wilson.aspx" />
+    <Content Include="Lakey Peterson.aspx" />
     <Content Include="Login.aspx" />
     <Content Include="LoginAdmin.aspx" />
     <Content Include="Logout.aspx" />
-    <Content Include="Maarechet Shaot.html" />
-    <Content Include="Info.html" />
+    <Content Include="Maarechet Shaot.aspx" />
     <Content Include="Main.aspx" />
     <Content Include="MasterPage.Master" />
+    <Content Include="Mick Fanning.aspx" />
+    <Content Include="PhotoBomb.aspx" />
     <Content Include="PicGalery.aspx" />
+    <Content Include="Pics\Carissa Moore.png" />
+    <Content Include="Pics\Carissa Moore1.png" />
+    <Content Include="Pics\Carissa Moore2.png" />
+    <Content Include="Pics\Filipe Toledo.png" />
+    <Content Include="Pics\Filipe Toledo1.png" />
+    <Content Include="Pics\Filipe Toledo2.png" />
+    <Content Include="Pics\GabrielMadina.png" />
+    <Content Include="Pics\GabrielMadina1.png" />
+    <Content Include="Pics\GabrielMadina2.png" />
     <Content Include="Pics\JJOJOLOFO.png" />
+    <Content Include="Pics\Julian Wilson.png" />
+    <Content Include="Pics\Julian Wilson1.png" />
+    <Content Include="Pics\Julian Wilson2.png" />
+    <Content Include="Pics\Lakey Peterson.png" />
+    <Content Include="Pics\Lakey Peterson1.png" />
+    <Content Include="Pics\Lakey Peterson2.png" />
+    <Content Include="Pics\Mick Fanning.png" />
+    <Content Include="Pics\Mick Fanning1.png" />
+    <Content Include="Pics\Mick Fanning2.png" />
+    <Content Include="Pics\NewLogoo.png" />
+    <Content Include="Pics\Pic11.png" />
+    <Content Include="Pics\Pic14.png" />
+    <Content Include="Pics\Pic15.png" />
+    <Content Include="Pics\Pic16.png" />
+    <Content Include="Pics\Pic17.png" />
+    <Content Include="Pics\Pic21.png" />
+    <Content Include="Pics\Pic24.png" />
+    <Content Include="Pics\Pic31.png" />
+    <Content Include="Pics\Pic34.png" />
+    <Content Include="Pics\Pic41.png" />
+    <Content Include="Pics\Pic42.png" />
+    <Content Include="Pics\Pic43.png" />
+    <Content Include="Pics\Pic44.png" />
+    <Content Include="Pics\RoberyKellySlater.png" />
+    <Content Include="Pics\RoberyKellySlater1.png" />
+    <Content Include="Pics\RoberyKellySlater2.png" />
+    <Content Include="Pics\stephanie gilmore.png" />
+    <Content Include="Pics\stephanie gilmore1.png" />
+    <Content Include="Pics\stephanie gilmore2.png" />
+    <Content Include="Robert Kelly Slater.aspx" />
     <Content Include="Scripts\CheckMyForm.js" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -172,6 +217,7 @@
     <Content Include="ShowTable.aspx" />
     <Content Include="SignUp.aspx" />
     <Content Include="Site.Master" />
+    <Content Include="Stephanie Gilmore.aspx" />
     <Content Include="ViewSwitcher.ascx" />
     <Content Include="Web.config" />
     <Content Include="Bundle.config" />
@@ -195,12 +241,12 @@
     </Compile>
     <Compile Include="App_Start\Helper.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Carosela.aspx.cs">
-      <DependentUpon>Carosela.aspx</DependentUpon>
+    <Compile Include="Carissa Moore.aspx.cs">
+      <DependentUpon>Carissa Moore.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
     </Compile>
-    <Compile Include="Carosela.aspx.designer.cs">
-      <DependentUpon>Carosela.aspx</DependentUpon>
+    <Compile Include="Carissa Moore.aspx.designer.cs">
+      <DependentUpon>Carissa Moore.aspx</DependentUpon>
     </Compile>
     <Compile Include="ComplexQueryaspx.aspx.cs">
       <DependentUpon>ComplexQueryaspx.aspx</DependentUpon>
@@ -230,8 +276,43 @@
     <Compile Include="DeleteRecord.aspx.designer.cs">
       <DependentUpon>DeleteRecord.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Filipe Toledo.aspx.cs">
+      <DependentUpon>Filipe Toledo.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Filipe Toledo.aspx.designer.cs">
+      <DependentUpon>Filipe Toledo.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Gabriel Medina.aspx.cs">
+      <DependentUpon>Gabriel Medina.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Gabriel Medina.aspx.designer.cs">
+      <DependentUpon>Gabriel Medina.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Info.aspx.cs">
+      <DependentUpon>Info.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Info.aspx.designer.cs">
+      <DependentUpon>Info.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Julian Wilson.aspx.cs">
+      <DependentUpon>Julian Wilson.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Julian Wilson.aspx.designer.cs">
+      <DependentUpon>Julian Wilson.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Lakey Peterson.aspx.cs">
+      <DependentUpon>Lakey Peterson.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Lakey Peterson.aspx.designer.cs">
+      <DependentUpon>Lakey Peterson.aspx</DependentUpon>
     </Compile>
     <Compile Include="Login.aspx.cs">
       <DependentUpon>Login.aspx</DependentUpon>
@@ -254,6 +335,13 @@
     <Compile Include="Logout.aspx.designer.cs">
       <DependentUpon>Logout.aspx</DependentUpon>
     </Compile>
+    <Compile Include="Maarechet Shaot.aspx.cs">
+      <DependentUpon>Maarechet Shaot.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Maarechet Shaot.aspx.designer.cs">
+      <DependentUpon>Maarechet Shaot.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Main.aspx.cs">
       <DependentUpon>Main.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -268,6 +356,20 @@
     <Compile Include="MasterPage.Master.designer.cs">
       <DependentUpon>MasterPage.Master</DependentUpon>
     </Compile>
+    <Compile Include="Mick Fanning.aspx.cs">
+      <DependentUpon>Mick Fanning.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Mick Fanning.aspx.designer.cs">
+      <DependentUpon>Mick Fanning.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="PhotoBomb.aspx.cs">
+      <DependentUpon>PhotoBomb.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="PhotoBomb.aspx.designer.cs">
+      <DependentUpon>PhotoBomb.aspx</DependentUpon>
+    </Compile>
     <Compile Include="PicGalery.aspx.cs">
       <DependentUpon>PicGalery.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -276,6 +378,13 @@
       <DependentUpon>PicGalery.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Robert Kelly Slater.aspx.cs">
+      <DependentUpon>Robert Kelly Slater.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Robert Kelly Slater.aspx.designer.cs">
+      <DependentUpon>Robert Kelly Slater.aspx</DependentUpon>
+    </Compile>
     <Compile Include="SelectByNBame.aspx.cs">
       <DependentUpon>SelectByNBame.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -324,6 +433,13 @@
     </Compile>
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
+    </Compile>
+    <Compile Include="Stephanie Gilmore.aspx.cs">
+      <DependentUpon>Stephanie Gilmore.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Stephanie Gilmore.aspx.designer.cs">
+      <DependentUpon>Stephanie Gilmore.aspx</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>

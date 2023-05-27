@@ -81,18 +81,37 @@
             flex: 33.33%;
             padding: 5px;
         }
+        .btn-side {
+            --bs-button-paddin-y:0rem;
+            width:12rem;
+        }
+        }
+        .mpTable, .mpTable.th, .mpTable.td, .mpTable.tr, .mpTd {
+            border: none;
+            text-align:right;
+            border-collapse:collapse;
+        }
+        th, td{
+            text-align:unset;
+        }
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+            A:hover {
+                color: red;
+            }
+
     </style>
 </head>
 <body>
-    <header><strong>Jojo Surfing</strong></header>
     <center>
-        <img src="Pics/edwaigdsahv.png" />
+        <img src="Pics/NewLogoo.png" />
     </center>
     <table class=" mpTable">
         <tr class="mpTd" style="vertical-align: top">
-            <td class="mpTd" rowspan="2" style="width: 20%;">
-               
-            </td>
+            <td class="mpTd" rowspan="2" style="width: 20%;"></td>
             <td class="mpTd" style="width: 70%;">
                 <div id="top" class="img-responsive" style="height: 140px;">
                 </div>
@@ -103,14 +122,14 @@
             <div>
                 <hr style="height: 2px; border-width: 0; color: gray; background-color: gray">
                 <nav>
-                    <%= (Session["admin"].ToString() != "yes" && Session["uName"].ToString() != "אורח") ? "<a href='Logout.aspx' class='btn btn-outline-primary'><span>התנתקות</span></a><a href='LoginAdmin.aspx' class='btn btn-outline-secondary'><span>התחברות מנהל</span></a>":"" %>
-                    <% = loginMsg%> 
-                    <a href="Info.html"><span>אינפורמציה</span></a>
-                    <a href="SignUp.aspx"><span>כניסה למשתמש</span></a>
-                    <a href="Main.html"><span>בית</span></a>
+                    <%=loginMsg%>
+                    <a href="PicGalery.aspx"><span>גלריית תמונות</span></a>
+                    <a href="Info.aspx"><span>אינפורמציה</span></a>
+                    <a href="SignUp.aspx"><span>רישום</span></a>
+                    <a href="Main.aspx"><span>בית</span></a>
                     <a href="https://beachcam.co.il/dromi2.html"><span>מצלמות חוף</span></a>
                     <a href="https://gosurf.co.il/"><span>תחזית גלים</span></a>
-                    <a href="Maarechet Shaot.html"><span>מערכת שעות</span></a>
+                    <a href="Maarechet Shaot.aspx"><span>מערכת שעות</span></a>
                 </nav>
                 <hr style="height: 2px; border-width: 0; color: gray; background-color: gray">
                 <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">

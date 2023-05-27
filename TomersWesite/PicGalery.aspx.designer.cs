@@ -11,7 +11,7 @@ namespace TomersWesite
 {
 
 
-    public partial class picGalery
+    public partial class PicGalery
     {
     }
 }

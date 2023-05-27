@@ -27,8 +27,7 @@ namespace TomersWesite
             }
             else if (Session["uName"].ToString() == "אורח")
             {
-                loginMsg += "<a href='Login.aspx' class='btn btn-outline-primary btn-lg btn-side'>התחבר</a>";
-                loginMsg += "<a href='Signup.aspx' class='btn btn-outline-secondary btn-lg btn-side'>רישום</a>";
+                loginMsg += "<a href='Login.aspx'class='btn btn-outline-primary btn-lg btn-side'><span>התחבר</span></a>";
             }
             else  // authenticated user
             {

@@ -13,21 +13,21 @@ namespace TomersWesite
         public string msg = "";
         protected void Page_Load(object sender, EventArgs e)
         {
-            if (Session["Admin"].ToString() == "no")
+            if (Session["admin"].ToString() == "no")
             {
-                msg += "<div style = 'text-align: center; color red'>";
-                msg += "<h3> אינך מנהל! אין לך הרשאה לצפות בדף זה</h3>";
-                msg += "<a href = 'Main.html>[המשך]</a>'";
+                msg += "<div style= 'text align: center; color; red;'>";
+                msg += "<h3>אינך מנהל! אין לך הרשאה לגשת לעמוד זה </h3>";
+                msg += "<a href = 'Login.aspx' >[ המשך ]</a>";
                 msg += "</div>";
             }
             else
             {
-                msg += "<h3><a href=\"ShowTable.aspx\">ShowTable.aspx</a>\r\n</h3>";
-                msg += "br /><br />";
-                msg += "<h3><a href=\"SelectByNBame.aspx\">שאילתה פשוטה</a></h3>";
-                msg += "<h3> <a href=\"SelectGmailAndYears.aspx\">שאליתה מורכבת</a> </h3>";
-
+                msg += "<h3><a href ='ShowTable.aspx'> הצגת טבלת משתמשים</a></h3>";
+                msg += "<br/>";
+                msg += "<h3><a href = 'SelectByName.aspx'>כל המשתמשים שהשם הפרטי שלהם מתחיל ב- א</a></h3>";
+                msg += "<h3><a href = 'SelectGmailAndYears.aspx'>ב- חיפה, מודיעין או תל-אביב gmail כל המשתמשים בכתובת<a></h3>";
             }
+
         }
     }
 }
