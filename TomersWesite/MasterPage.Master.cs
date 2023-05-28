@@ -20,11 +20,11 @@ namespace TomersWesite
             {
                 loginMsg += "<a href='Logout.aspx' class='btn btn-outline-secondary btn-sm btn-side p-0'>התנתק</a><br />";
                 loginMsg += "<a href='DeleteUser.aspx' class='btn btn-outline-secondary btn-sm btn-side p-0'>מחיקת משתמש</a><br />";
-                loginMsg += "<a href='ComplexQuery.aspx' class='btn btn-outline-secondary btn-sm btn-side p-0'>שאילתה דינאמית מורכבת</a><br />";
+                loginMsg += "<a href='ComplexQueryaspx.aspx' class='btn btn-outline-secondary btn-sm btn-side p-0'>שאילתה דינאמית מורכבת</a><br />";
                 loginMsg += "<a href='ShowTable.aspx' class='btn btn-outline-secondary btn-sm btn-side p-0'>הצגת טבלה</a><br />";
                 loginMsg += "<a href='AdminPage.aspx' class='btn btn-outline-secondary btn-sm btn-side p-0'>    ניהול    </a><br />";
-                loginMsg += "<a href='SelectByName.aspx' class='btn btn-outline-secondary btn-sm btn-side p-0'>הצגת משתמשים בשם א<a><br />";
-                loginMsg += "<a href='SelectGmailAndYears.aspx' class='btn btn-outline-secondary btn-sm btn-side p-0'>משתמשי ג'ימייל</a>"; //by Guy Siedes
+                loginMsg += "<a href='SelectByNBame.aspx' class='btn btn-outline-secondary btn-sm btn-side p-0'>הצגת משתמשים בשם א<a><br />";
+                loginMsg += "<a href='SelectGmailAndYears.aspx' class='btn btn-outline-secondary btn-sm btn-side p-0'>משתמשי ג'ימייל</a>";
             }
             else if (Session["uName"].ToString() == "אורח")
             {

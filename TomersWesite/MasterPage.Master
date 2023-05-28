@@ -140,7 +140,7 @@
                 <div>
                 <a href="Main.aspx" class="btn btn-outline-secondary">דף הבית</a>
                     <%= (Session["admin"].ToString() != "yes" && Session["uName"].ToString() != "אורח") ? "<a href=\"ShowTable.aspx\" class=\"btn btn-outline-secondary\">טבלה</a>\r\n<a href=\"Maarechet Shaot.aspx\" class=\"btn btn-outline-secondary\">לוח שעות</a>\r\n":"" %>
-                    <%= (Session["admin"].ToString() == "yes") ? "<a href=\"Schedule.aspx\" class=\"btn btn-outline-secondary\">לוח שעות</a>\r\n":"" %>
+                    <%= (Session["admin"].ToString() == "yes") ? "<a href=\"Maarechet Shaot.aspx\" class=\"btn btn-outline-secondary\">לוח שעות</a>\r\n":"" %>
                     <a href="PicGalery.aspx" class="btn btn-outline-secondary">גלריית תמונות</a>   
 
                 </div>

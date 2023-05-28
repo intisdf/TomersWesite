@@ -11,6 +11,7 @@
     <tr>
         <td class=".nav ul">
             <ol>
+                <h3>גולשים: </h3>
                 <li><a href="#Robert Kelly Slater" class="">רוברט קלי סלייטר</a> </li>
                 <li><a href="#Julian Wilson" class="">ג'וליאן ווילסון</a> </li>
                 <li><a href="#Lakey Peterson" class="">ליקי פיטרסון</a> </li>
