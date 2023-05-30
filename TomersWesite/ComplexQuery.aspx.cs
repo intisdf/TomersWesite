@@ -16,6 +16,7 @@ namespace TomersWesite
         public string sql = "";
         public string tableName = "usersTbl";
         public string sqlSelect;
+        public string Manager ="";
         public bool showContent = true;
         protected void Page_Load(object sender, EventArgs e)
         {
@@ -31,6 +32,7 @@ namespace TomersWesite
 
             else
             {
+                Manager = "<div class=\"h-100 d-flex align-items-center justify-content-center\">\r\n        <table border=\"1\">\r\n            <tr>\r\n                <td width=\"20\">\r\n                    <select name=\"field1\" id=\"field1\" onclick=\"detectField1();\">\r\n                        <option value=\"lName\">שם משפחה</option>\r\n                        <option value=\"fName\">שם פרטי</option>\r\n                        <option value=\"email\">דוא\"ל</option>\r\n                        <option value=\"gender\">מגדר</option>\r\n                        <option value=\"yearBorn\">שנת לידה</option>\r\n                        <option value=\"prefix\">קידומת טלפון</option>\r\n                        <option value=\"phone\">טלפון</option>\r\n                        <option value=\"hobies\">תחביב</option>\r\n                    </select>\r\n                </td>\r\n                <td width=\"150\">\r\n                    <div id=\"query1\" align=\"center\"></div>\r\n                </td>\r\n            </tr>\r\n            <tr>\r\n                <td colspan=\"2\" align=\"center\" dir=\"ltr\">\r\n                    <input type=\"radio\" name=\"op\" value=\"and\" />\r\n                    AND\r\n                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;\r\n                    <input type=\"radio\" name=\"op\" value=\"or\" checked />\r\n                    OR\r\n                </td>\r\n            </tr>\r\n            <tr>\r\n                <td>\r\n                    <select name=\"field2\" id=\"field2\" onclick=\"detectField2();\">\r\n                        <option value=\"lName\">שם משפחה</option>\r\n                        <option value=\"fName\">שם פרטי</option>\r\n                        <option value=\"email\">דוא\"ל</option>\r\n                        <option value=\"gender\">מגדר</option>\r\n                        <option value=\"yearBorn\">שנת לידה</option>\r\n                        <option value=\"prefix\">קידומת טלפון</option>\r\n                        <option value=\"phone\">טלפון</option>\r\n                        <option value=\"hobies\">תחביב</option>\r\n                    </select>\r\n                </td>\r\n                <td width=\"150\">\r\n                    <div id=\"query2\" align=\"center\"></div>\r\n                </td>\r\n            </tr>\r\n            <tr>\r\n                <td colspan=\"2\" align=\"center\">\r\n                    <input type=\"submit\" name=\"submit\" value=\"חפש\" />\r\n                </td>\r\n            </tr>\r\n        </table>\r\n            </div>";
                 string field1 = Request.Form["field1"];
                 string field2 = Request.Form["field2"];
 
